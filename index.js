@@ -1,6 +1,9 @@
+console.log("****************************")
+console.log("HOW WELL DO YOU KNOW SHUBAM");
+console.log("****************************")
 var readlineSync = require("readline-sync");
 
-var userName = readlineSync.question("What is your name? ");
+var userName = readlineSync.question("\n What is your name? ");
 console.log("Welcome "+ userName + " to How Well you know Shubam? ");
 console.log("\n")
 
@@ -9,7 +12,7 @@ console.log("\n")
 var score = 0;
 function askQuiz(ques,ans)
 {
-
+console.log("\n")
   var userAnswer = readlineSync.question(ques);
   if(userAnswer.toUpperCase() === ans.toUpperCase())
   {
